@@ -4,16 +4,8 @@ import "./App.css";
 
 const App = () => {
   const [hover, setHover] = useState(false);
-  const [searchTerm, setSearchTerm] = useState("");
-/*
-  const quickCommands = [
-    { name: ".ban", desc: "Ban a user from the server" },
-    { name: ".kick", desc: "Kick a user from the server" },
-    { name: "/help", desc: "Show help command list" },
-    { name: "/avatar", desc: "View user avatar" },
-    { name: "/lock", desc: "Lock the current channel" },
-  ];
-*/
+  
+ 
   const filteredCommands = quickCommands.filter(cmd =>
     cmd.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -66,7 +58,9 @@ const App = () => {
   </a>
       </div>
 
-     
+      
+
+      
 
       {/* ====== Contact Section ====== */}
 <section
