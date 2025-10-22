@@ -14,3 +14,9 @@ root.render(
     </Routes>
   </BrowserRouter>
 );
+
+
+
+//git add .
+//git commit -m "update: تعديل تصميم الصفحة الرئيسية"
+//git push
