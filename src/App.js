@@ -5,7 +5,7 @@ import "./App.css";
 const App = () => {
   const [hover, setHover] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
-
+/*
   const quickCommands = [
     { name: ".ban", desc: "Ban a user from the server" },
     { name: ".kick", desc: "Kick a user from the server" },
@@ -13,7 +13,7 @@ const App = () => {
     { name: "/avatar", desc: "View user avatar" },
     { name: "/lock", desc: "Lock the current channel" },
   ];
-
+*/
   const filteredCommands = quickCommands.filter(cmd =>
     cmd.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -66,29 +66,7 @@ const App = () => {
   </a>
       </div>
 
-      {/* Search Section */}
-      <div className="w-full max-w-lg px-4 mb-16">
-        <input
-          type="text"
-          placeholder="Search commands..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full px-4 py-3 rounded-xl bg-[#1b1b2b] text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
-        />
-      </div>
-
-      {/* Quick Commands */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl px-4 mb-20">
-        {filteredCommands.map((cmd, index) => (
-          <div
-            key={index}
-            className="p-5 bg-[#1a1a2f]/70 rounded-2xl border border-white/10 hover:border-purple-500/50 hover:shadow-lg transition-all"
-          >
-            <h3 className="text-xl font-semibold text-purple-400">{cmd.name}</h3>
-            <p className="text-gray-400 mt-2">{cmd.desc}</p>
-          </div>
-        ))}
-      </div>
+     
 
       {/* ====== Contact Section ====== */}
 <section
