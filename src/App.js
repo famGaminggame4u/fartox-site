@@ -15,7 +15,7 @@ const App = () => {
         <div className="flex items-center gap-4 md:gap-6">
           <Link to="/" className="hover:text-purple-400 transition">Home</Link>
           <Link to="/commands" className="hover:text-purple-400 transition">Commands</Link>
-          <Link to="/Dashboard" className="hover:text-purple-400 transition">Dashboard</Link>
+          <Link to="/dashboard" className="hover:text-purple-400 transition">Dashboard</Link>
         </div>
       </nav>
 
