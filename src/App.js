@@ -102,35 +102,38 @@ const App = () => {
     Have questions or need help? Reach out anytime!
   </p>
 
-  <div className="flex gap-6">
-    {/* Discord Button */}
-    <a
-      href="https://discord.gg/NGFd3dqk4p"
-      target="_blank"
-      rel="noreferrer"
-      className="relative px-8 py-3 rounded-xl font-semibold text-lg overflow-hidden
-        bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg
-        transition-all duration-300 ease-out hover:scale-105 hover:shadow-purple-500/40
-        before:absolute before:inset-0 before:bg-gradient-to-r before:from-purple-400 before:to-blue-500 before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300"
-    >
-      <span className="relative z-10 flex items-center gap-2">
-        <i className="fa-brands fa-discord text-xl"></i> Discord
-      </span>
-    </a>
+  <div className="flex flex-wrap gap-6 justify-center">
+  {/* Discord Button */}
+  <a
+    href="https://discord.gg/NGFd3dqk4p"
+    target="_blank"
+    rel="noreferrer"
+    className="relative px-8 py-3 rounded-xl font-semibold text-lg overflow-hidden
+      bg-gradient-to-r from-[#5865F2] to-[#7289DA] text-white shadow-lg
+      transition-all duration-300 ease-out hover:scale-105 hover:shadow-[#5865F2]/50
+      before:absolute before:inset-0 before:bg-gradient-to-r before:from-[#7289DA] before:to-[#5865F2] before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300"
+  >
+    <span className="relative z-10 flex items-center gap-3">
+      <i className="fa-brands fa-discord text-2xl"></i>
+      <span>Discord</span>
+    </span>
+  </a>
 
-    {/* Email Button */}
-    <a
-      href="famwesa@gmail.com"
-      className="relative px-8 py-3 rounded-xl font-semibold text-lg overflow-hidden
-        bg-gradient-to-r from-pink-500 to-orange-500 text-white shadow-lg
-        transition-all duration-300 ease-out hover:scale-105 hover:shadow-orange-400/40
-        before:absolute before:inset-0 before:bg-gradient-to-r before:from-orange-400 before:to-pink-500 before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300"
-    >
-      <span className="relative z-10 flex items-center gap-2">
-        <i className="fa-solid fa-envelope text-xl"></i> Email
-      </span>
-    </a>
-  </div>
+  {/* Email Button */}
+  <a
+    href="mailto:famwesa@gmail.com"
+    className="relative px-8 py-3 rounded-xl font-semibold text-lg overflow-hidden
+      bg-gradient-to-r from-[#EA4335] to-[#FBBC05] text-white shadow-lg
+      transition-all duration-300 ease-out hover:scale-105 hover:shadow-[#EA4335]/50
+      before:absolute before:inset-0 before:bg-gradient-to-r before:from-[#FBBC05] before:to-[#EA4335] before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300"
+  >
+    <span className="relative z-10 flex items-center gap-3">
+      <i className="fa-solid fa-envelope text-2xl"></i>
+      <span>Email</span>
+    </span>
+  </a>
+</div>
+
 </section>
 
 {/* ====== Footer ====== */}
